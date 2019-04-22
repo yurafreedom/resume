@@ -1,0 +1,151 @@
+.why {
+	padding-top: 90px;
+	background-image: url('../img/header-bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.why-block {
+	padding-bottom: 100px;
+	&__heading {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		margin-bottom: 60px;
+	}
+	&__heading h2 {
+		display: block;
+		text-align: center;
+		font-size: 64px;
+		font-weight: 700;
+		color: #fff;
+	}
+	&__slider-block {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		width: 540px;
+		margin: 0 auto;
+	}
+	&__card {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+	&__card-text {
+		font-size: 21px;
+		font-weight: 400;
+		color: #fff;
+		text-transform: uppercase;
+		margin-right: 100px;
+	}
+	&__card-icon {
+		display: flex;
+		align-items: center;
+		width: 120px;
+		height: 200px;
+	}
+}
+
+.slick-dots {
+	position: absolute;
+	list-style: none;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	width: auto;
+	left: 50%;
+	bottom: -45px;
+	transform: translateX(-50%);
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.slick-dots li {
+	position: relative;
+	display: inline-block;
+	margin: 0 30px;
+}
+
+.slick-dots li button {
+	display: block;
+	border: 1px solid #fff;
+	opacity: .9;
+	transform: scale(.5);
+	outline: 0;
+	line-height: 0;
+	font-size: 0;
+	color: transparent;
+	backface-visibility: hidden;
+	transition: all .2s ease-in-out;
+}
+
+.slick-dots li, .slick-dots li button {
+	height: 20px;
+	width: 20px;
+	padding: 0;
+	cursor: pointer;
+}
+
+.slick-dots li.slick-active button {
+	transform: scale(1);
+	background-color: #fff;
+}
+
+.slick-dots li button:before {
+	display: none;
+}
+
+@media screen and (max-width: 767px) {
+	.why {
+		padding-top: 30px;
+	}
+	.why-block {
+		&__slider-block {
+			width: 100%;
+		}
+		&__card-text {
+			margin-right: 0;
+		}
+		&__heading {
+			margin-bottom: 30px;
+		}
+		&__heading h2 {
+			font-size: 28px;
+		}
+		&__card-text {
+			display: block;
+			text-align: center;
+			font-size: 16px;
+			width: 300px;
+		}
+		&__card-icon {
+			width: 300px;
+			justify-content: center;
+		}
+		.slick-dots {
+			width: 300px;
+			flex-wrap: wrap;
+		}
+		.slick-dots li {
+			margin: 0 6px;
+		}
+	}
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+	.why {
+		padding-top: 60px;
+	}
+	.why-block {
+		&__heading {
+			margin-bottom: 30px;
+		}
+		&__heading h2 {
+			font-size: 52px;
+		}
+	}
+}

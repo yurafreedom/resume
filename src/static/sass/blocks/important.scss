@@ -1,0 +1,113 @@
+.important {
+	background-color: #E5E5E5;
+}
+
+.important-block {
+	padding-top: 100px;
+	&__heading {
+		margin-bottom: 100px;
+	}
+	&__heading h2 {
+		display: block;
+		text-align: center;
+		font-size: 64px;
+		font-weight: 700;
+		color: #606060;
+	}
+	&__list {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		margin-bottom: 90px;
+	}
+	&__card {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 280px;
+	}
+	&__card:not(:last-child) {
+		border-right: 2px solid #C4C4C4;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	&__card h3 {
+		display: block;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 16px;
+		font-weight: 700;
+		color: #4D4D4D;
+		width: 260px;
+		margin: 0 auto;
+	}
+	&__card-icon {
+		width: 140px;
+		height: 86px;
+		margin-bottom: 40px;
+	}
+	&__btn {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		padding-bottom: 40px;
+	}
+	&__btn .btn--now {
+		width: 380px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.important-block {
+		padding-top: 30px;
+		&__list {
+			justify-content: center;
+		}
+		&__card {
+			margin-bottom: 30px;
+			border-right: 0;
+		}
+		&__card:not(:last-child) {
+			border-right: 0;
+			padding-right: 0;
+		}
+		&__card h3 {
+			width: 200px;
+			font-size: 14px;
+		}
+		&__heading {
+			margin-bottom: 40px;
+		}
+		&__heading h2 {
+			font-size: 28px;
+		}
+		&__list {
+			margin-bottom: 30px;
+		}
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+	.important-block {
+		padding-top: 60px;
+		&__list {
+			justify-content: center;
+		}
+		&__card {
+			margin-bottom: 45px;
+		}
+		&__card:nth-child(2) {
+			border-right: 0;
+		}
+		&__card h3 {
+			width: 200px;
+			font-size: 14px;
+		}
+		&__heading h2 {
+			font-size: 45px;
+		}
+		&__list {
+			margin-bottom: 45px;
+		}
+	}
+}
